@@ -42,6 +42,11 @@ urlpatterns = [
         include('rest_starter.apps.app2.api.v1.urls'),
         name='app2_api_v1_urls',
     ),
+     path(
+        API_V1_PATH,
+        include('rest_starter.apps.auth_jwt.api.v1.urls'),
+        name='auth_api_v1_urls',
+    ),
 
     # REST API v2
     path(

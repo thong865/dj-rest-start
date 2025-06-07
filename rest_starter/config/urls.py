@@ -26,6 +26,7 @@ urlpatterns = [
 
     # Apps urls
     path('', include('rest_starter.apps.core.urls'), name='apps_core_urls'),
+    path('', include('rest_starter.apps.auth_jwt.urls'), name='apps_auth_jwt_urls'),
     path('', include('rest_starter.apps.app1.urls'), name='apps_app1_urls'),
     path('', include('rest_starter.apps.app2.urls'), name='apps_app2_urls'),
 ]
